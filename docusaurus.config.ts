@@ -18,6 +18,11 @@ const config: Config = {
   organizationName: "dataingio", // Usually your GitHub org/user name.
   projectName: "aa-system-docs", // Usually your repo name.
 
+  // Enviornment Variables
+  customFields: {
+    USE_SSH: true
+  },
+
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
@@ -38,7 +43,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/dataingio/aa-system-docs/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/dataingio/aa-system-docs/blob/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",

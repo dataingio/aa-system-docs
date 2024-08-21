@@ -53,6 +53,7 @@
   --ifm-table-border-width: 0 !important;
   --ifm-link-color: #327bf9 !important;
   --ifm-navbar-shadow: none; /*0 1px 1px 0 rgba(0, 0, 0, 0.04); */
+  background-color: var(--ifm-navbar-background-color);
 }
 
 [data-theme="dark"] {
