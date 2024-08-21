@@ -48,6 +48,17 @@ Incremental constants are applied to other constant sequences, such as [Sizing C
 
 ---
 
+## **Border Constants**
+
+### `width`
+
+Width of the border surrounding an element.
+
+| | |
+|--|--|
+| base [`incremental`](#incremental) | scope `border` |
+| |
+
 ## **Opacity Constants**
 
 ### `opacity`
