@@ -1,5 +1,7 @@
 name: Deploy Docusaurus to GitHub Pages
 
+permissions: write-all
+
 on:
   push:
     paths-ignore:
