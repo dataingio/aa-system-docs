@@ -1,5 +1,7 @@
 name: Deploy Docusaurus to GitHub Pages
 
+permissions: write-all
+
 on:
   push:
     paths-ignore:
@@ -29,4 +31,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: build
           user_name: github-actions[bot]
+<<<<<<< HEAD
           user_email: fred.r.duarte@outlook.com
+=======
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+>>>>>>> cc6d0cff9e37ac5906ea931ed1f27ffbb31265f9
