@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-swiftui-generator" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">SwiftUI Generator | 🅰️ Aa System Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://design.dataing.io/aa-system-docs/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://design.dataing.io/aa-system-docs/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://design.dataing.io/aa-system-docs/docs/swiftui-generator"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="SwiftUI Generator | 🅰️ Aa System Docs"><meta data-rh="true" name="description" content="FigGen - Figma to SwiftUI Generator"><meta data-rh="true" property="og:description" content="FigGen - Figma to SwiftUI Generator"><link data-rh="true" rel="icon" href="/aa-system-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://design.dataing.io/aa-system-docs/docs/swiftui-generator"><link data-rh="true" rel="alternate" href="https://design.dataing.io/aa-system-docs/docs/swiftui-generator" hreflang="en"><link data-rh="true" rel="alternate" href="https://design.dataing.io/aa-system-docs/docs/swiftui-generator" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/aa-system-docs/blog/rss.xml" title="🅰️ Aa System Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/aa-system-docs/blog/atom.xml" title="🅰️ Aa System Docs Atom Feed"><link rel="stylesheet" href="/aa-system-docs/assets/css/styles.6b71f5b9.css">
+<script src="/aa-system-docs/assets/js/runtime~main.ade973e6.js" defer="defer"></script>
+<script src="/aa-system-docs/assets/js/main.65c7d614.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aa-system-docs/"><div class="navbar__logo"><img src="/aa-system-docs/img/logo.svg" alt="Aa System Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aa-system-docs/img/logo.svg" alt="Aa System Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">🅰️ Aa System</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/aa-system-docs/docs/">Docs</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/dataingio/aa-system-docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/aa-system-docs/docs/">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/aa-system-docs/docs/swiftui-generator">SwiftUI Generator</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/aa-system-docs/docs/category/primitives">Primitives</a><button aria-label="Expand sidebar category &#x27;Primitives&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/aa-system-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">SwiftUI Generator</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>SwiftUI Generator</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="figgen---figma-to-swiftui-generator"><code>FigGen</code> - Figma to SwiftUI Generator<a href="#figgen---figma-to-swiftui-generator" class="hash-link" aria-label="Direct link to figgen---figma-to-swiftui-generator" title="Direct link to figgen---figma-to-swiftui-generator">​</a></h2>
+<p><em>&quot;This is the best figgen plugin ever!&quot;</em> - <em>Everyone</em></p>
+<p>This is an extension of the popular Figma to Code plugin.</p>
+<p>Adds support for missing features and supplies many fixes needed to export our design system here @dataingio.</p>
+<p>Only SwiftUI is currently supported. All other renderers have been disabled.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="render-as-a-single-file">Render as a Single File<a href="#render-as-a-single-file" class="hash-link" aria-label="Direct link to Render as a Single File" title="Direct link to Render as a Single File">​</a></h2>
+<p>The generator can be configured to render all code as a single file. The file can be copy-pasted into a single Swift file that should compile without any additional dependencies.</p>
+<p>This is useful for testing and observing components during design.</p>
+<p>The following generator settings must be set:</p>
+<ul>
+<li><strong>Effect Style Output</strong> <code>Render in Place</code></li>
+<li><strong>Custom Fonts</strong> <code>System (dynamic)</code></li>
+<li><strong>Text Style Output</strong> <code>Render in Place</code></li>
+<li><strong>Component Instances</strong> <code>Deep Render</code></li>
+<li><strong>Node Parent</strong> <code>Crawl Document</code></li>
+<li><strong>Render Mode</strong> <code>Preview</code></li>
+<li><strong>Vector Images</strong> <code>Render in Place</code></li>
+<li><strong>Figma Variables</strong> <code>Render in Place</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generator-settings">Generator Settings<a href="#generator-settings" class="hash-link" aria-label="Direct link to Generator Settings" title="Direct link to Generator Settings">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="effects"><strong>Effects</strong><a href="#effects" class="hash-link" aria-label="Direct link to effects" title="Direct link to effects">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="backdrop-blur-output"><strong>Backdrop Blur Output</strong><a href="#backdrop-blur-output" class="hash-link" aria-label="Direct link to backdrop-blur-output" title="Direct link to backdrop-blur-output">​</a></h4>
+<p>Technique used to render backdrop blur effects.</p>
+<ul>
+<li>
+<p><strong><code>Material</code></strong> Render as SwiftUI Materials. Requires predefined blur types. System default.</p>
+<table><thead><tr><th>Radius</th><th>Swift Material</th></tr></thead><tbody><tr><td><code>100</code></td><td><code>.ultraThin</code> <em>(default)</em></td></tr><tr><td><code>200</code></td><td><code>.thin</code></td></tr><tr><td><code>300</code></td><td><code>.regular</code></td></tr><tr><td><code>500</code></td><td><code>.thick</code></td></tr><tr><td><code>600</code></td><td><code>.ultraThick</code></td></tr><tr><td><code>1000</code></td><td><code>.bar</code></td></tr></tbody></table>
+</li>
+<li>
+<p><strong><code>Modifier</code></strong> Render as a custom global modifier based on UIKit Materials. Requires predefined blur types.</p>
+<table><thead><tr><th>Radius</th><th>UIKit Material</th></tr></thead><tbody><tr><td><code>0</code></td><td><code>.extraLight</code> <em>(default)</em></td></tr><tr><td><code>1</code></td><td><code>.light</code></td></tr><tr><td><code>2</code></td><td><code>.dark</code></td></tr><tr><td><code>3</code></td><td><code>.extraDark</code></td></tr><tr><td><code>4</code></td><td><code>.regular</code></td></tr><tr><td><code>5</code></td><td><code>.prominent</code></td></tr><tr><td><code>6</code></td><td><code>.systemUltraThinMaterial</code></td></tr><tr><td><code>7</code></td><td><code>.systemThinMaterial</code></td></tr><tr><td><code>8</code></td><td><code>.systemMaterial</code></td></tr><tr><td><code>9</code></td><td><code>.systemThickMaterial</code></td></tr><tr><td><code>10</code></td><td><code>.systemChromeMaterial</code></td></tr><tr><td><code>11</code></td><td><code>.systemUltraThinMaterialLight</code></td></tr><tr><td><code>12</code></td><td><code>.systemThinMaterialLight</code></td></tr><tr><td><code>13</code></td><td><code>.systemMaterialLight</code></td></tr><tr><td><code>14</code></td><td><code>.systemThickMaterialLight</code></td></tr><tr><td><code>15</code></td><td><code>.systemChromeMaterialLight</code></td></tr></tbody></table>
+</li>
+<li>
+<p><strong><code>View</code></strong> Render as a custom view modifier. Allows for any blur radius amount. High accuracy, low performance.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="effect-style-output"><strong>Effect Style Output</strong><a href="#effect-style-output" class="hash-link" aria-label="Direct link to effect-style-output" title="Direct link to effect-style-output">​</a></h4>
+<p>How Figma Effect Styles are rendered.</p>
+<ul>
+<li>
+<p><strong><code>Modifier</code></strong> Render as a custom view modifier. The name of the effect style is used as the modifer name. Global style modifiers are generated in the <strong>Effect Styles</strong> panel.</p>
+</li>
+<li>
+<p><strong><code>Render in Place</code></strong> Render the effect style in place. No global style modifiers are generated, and the effect style is rendered directly on the view.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="materials-on-shapes"><strong>Materials on Shapes</strong><a href="#materials-on-shapes" class="hash-link" aria-label="Direct link to materials-on-shapes" title="Direct link to materials-on-shapes">​</a></h4>
+<p>Swift Materials can be applied to shapes as either the background of the content area or as the shape fill.</p>
+<ul>
+<li>
+<p><strong><code>Content Background (default)</code></strong> Render materials as <code>.background()</code> modifiers. The material is applied to the entire content area of the shape.</p>
+</li>
+<li>
+<p><strong><code>Shape Fill</code></strong> Render materials as <code>.fill()</code> modifiers. The material is applied to the shape fill.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fonts"><strong>Fonts</strong><a href="#fonts" class="hash-link" aria-label="Direct link to fonts" title="Direct link to fonts">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="custom-fonts"><strong>Custom Fonts</strong><a href="#custom-fonts" class="hash-link" aria-label="Direct link to custom-fonts" title="Direct link to custom-fonts">​</a></h4>
+<p>Allow custom fonts to be exported, or use system fonts. The system font can match to constants or take on dynamic sizes &amp; styles from the design.</p>
+<ul>
+<li>
+<p><strong><code>Link by Name</code></strong> Use the name of the font in the design to match to a custom font.</p>
+</li>
+<li>
+<p><strong><code>System Font (dynamic) (default)</code></strong> Use the system font for the platform as <code>.system()</code> modifiers with custom sizes matching the font size in the design.</p>
+</li>
+<li>
+<p><strong><code>System Font (fixed)</code></strong> Match the system font constant nearest to the font size in the design.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="font-weight-matching"><strong>Font Weight Matching</strong><a href="#font-weight-matching" class="hash-link" aria-label="Direct link to font-weight-matching" title="Direct link to font-weight-matching">​</a></h4>
+<p>Font weights can be matched to system font weights or use the name of the font weight in the design (unsupported).</p>
+<ul>
+<li>
+<p><strong><code>Figma Variables (unsupported)</code></strong> Use the name of the font weight in the design as a font weight. Currently unsupported by the Figma API, as font style is used for both font style and font weight.</p>
+</li>
+<li>
+<p><strong><code>System (default)</code></strong> Match the system font weight contstant to the font weight in the design.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="letter-spacing-style"><strong>Letter Spacing Style</strong><a href="#letter-spacing-style" class="hash-link" aria-label="Direct link to letter-spacing-style" title="Direct link to letter-spacing-style">​</a></h4>
+<p>iOS renders spacing in text by kerning characters. Figma render spacing in text by tracking characters.</p>
+<ul>
+<li>
+<p><strong><code>Kerning (iOS) (default)</code></strong> Translate the letter spacing to kerning.</p>
+</li>
+<li>
+<p><strong><code>Tracking (Figma)</code></strong> Keep the letter spacing as tracking.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="line-height"><strong>Line Height</strong><a href="#line-height" class="hash-link" aria-label="Direct link to line-height" title="Direct link to line-height">​</a></h4>
+<p>Figma allows setting the line height, whereas iOS only natively supports spacing between lines.</p>
+<ul>
+<li>
+<p><strong><code>Keep Figma</code></strong> Keep the line height as set in Figma.</p>
+</li>
+<li>
+<p><strong><code>Remove (default)</code></strong> Remove the line height. iOS will apply the default line height.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="system-font-size"><strong>System Font Size</strong><a href="#system-font-size" class="hash-link" aria-label="Direct link to system-font-size" title="Direct link to system-font-size">​</a></h4>
+<p>The iOS Dynamic Type system allows for text to be resized based on the user&#x27;s preferred text size.</p>
+<p>When <code>Custom Fonts</code> is set to <strong>System</strong>, this setting defines how to translate the font sizes in the design to the system font size.</p>
+<ul>
+<li><strong><code>Large (default)</code></strong> Use the large system font size set.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="text-style-output"><strong>Text Style Output</strong><a href="#text-style-output" class="hash-link" aria-label="Direct link to text-style-output" title="Direct link to text-style-output">​</a></h4>
+<p>Text styles can be exported as custom view modifiers or rendered in place.</p>
+<ul>
+<li>
+<p><strong><code>Modifier (default)</code></strong> Render text styles as custom view modifiers. The name of the text style is used as the modifier name. Global style modifiers are generated in the <strong>Text Styles</strong> panel.</p>
+</li>
+<li>
+<p><strong><code>Render in Place</code></strong> Render the text style in place. No global style modifiers are generated, and the text style is rendered directly on the view.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="generator"><strong>Generator</strong><a href="#generator" class="hash-link" aria-label="Direct link to generator" title="Direct link to generator">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="component-instances"><strong>Component Instances</strong><a href="#component-instances" class="hash-link" aria-label="Direct link to component-instances" title="Direct link to component-instances">​</a></h4>
+<p>Instances of components can be exported as a single component, or as a deep render of the component.</p>
+<ul>
+<li>
+<p><strong><code>Deep Render</code></strong> Deep render the component in place of the instance.</p>
+</li>
+<li>
+<p><strong><code>Link by Name (default)</code></strong> Use the name of the component in the design as the name of a custom View. The custom View is then called in place of the instance.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="error-output"><strong>Error Output</strong><a href="#error-output" class="hash-link" aria-label="Direct link to error-output" title="Direct link to error-output">​</a></h4>
+<p>Choose whether to output errors in the console terminal. In the Figma Desktop app, <code>Menu Bar</code> &gt; <code>Plugins</code> &gt; <code>Development</code> &gt; <code>Show/Hide Cconsole</code>.</p>
+<ul>
+<li>
+<p><strong><code>Show</code></strong> Show errors in the console terminal.</p>
+</li>
+<li>
+<p><strong><code>Hide (default)</code></strong> Hide errors in the console terminal.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="node-parent"><strong>Node Parent</strong><a href="#node-parent" class="hash-link" aria-label="Direct link to node-parent" title="Direct link to node-parent">​</a></h4>
+<p>By default, the Figma API does not provide the parent of the selected node. This setting allows the document to be crawled to determine the parent of the selected node. Very slow, as the entire document may be crawled.</p>
+<ul>
+<li>
+<p><strong><code>Crawl Document (default)</code></strong> Crawl the document to determine the parent of the selected node.</p>
+</li>
+<li>
+<p><strong><code>Only Selected (faster)</code></strong> Only use the selected node as the topmost parent.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="progress-bar"><strong>Progress Bar</strong><a href="#progress-bar" class="hash-link" aria-label="Direct link to progress-bar" title="Direct link to progress-bar">​</a></h4>
+<p>The total amount used for the progress bar displayed in the console terminal. The progress bar is used to indicate the progress of the code generation process. In the Figma Desktop app, <code>Menu Bar</code> &gt; <code>Plugins</code> &gt; <code>Development</code> &gt; <code>Show/Hide Cconsole</code>.</p>
+<ul>
+<li>
+<p><strong><code>1000</code></strong></p>
+</li>
+<li>
+<p><strong><code>500</code></strong></p>
+</li>
+<li>
+<p><strong><code>300</code></strong></p>
+</li>
+<li>
+<p><strong><code>100 (default)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="render-mode"><strong>Render Mode</strong><a href="#render-mode" class="hash-link" aria-label="Direct link to render-mode" title="Direct link to render-mode">​</a></h4>
+<p>The render mode determines how the code is generated in the main <code>SwiftUI</code> panel. The code can be rendered as a full preview, just a struct, or as only view code.</p>
+<ul>
+<li>
+<p><strong><code>Snippet</code></strong> Render only the view code.</p>
+</li>
+<li>
+<p><strong><code>Struct</code></strong> Render view as a complete struct.</p>
+</li>
+<li>
+<p><strong><code>Preview (default)</code></strong> Render the full preview for the struct.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="vector-images"><strong>Vector Images</strong><a href="#vector-images" class="hash-link" aria-label="Direct link to vector-images" title="Direct link to vector-images">​</a></h4>
+<p>Vector images can be rendered as <code>Path</code> views or linked as a custom view. Vectors are rendered in the <code>Vector Images</code> panel.</p>
+<blockquote>
+<p><em>Note: Vector image render is very slow.</em></p>
+</blockquote>
+<ul>
+<li>
+<p><strong><code>Disabled (default)</code></strong> Do not render vector images.</p>
+</li>
+<li>
+<p><strong><code>Link by Name</code></strong> Render the vector image in the <code>Vector Images</code> panel. The name of the vector image is used as the name of the custom view linked in the code.</p>
+</li>
+<li>
+<p><strong><code>Render in Place</code></strong> Render each vector image as a <code>Path</code> view in the code. Potentially very slow.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="metadata"><strong>METADATA</strong><a href="#metadata" class="hash-link" aria-label="Direct link to metadata" title="Direct link to metadata">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="component-descriptions"><strong>Component Descriptions</strong><a href="#component-descriptions" class="hash-link" aria-label="Direct link to component-descriptions" title="Direct link to component-descriptions">​</a></h4>
+<p>Figma components may contain multiline descriptions. These descriptions can be exported as multiline comments in the output code.</p>
+<ul>
+<li>
+<p><strong><code>As Comments (default)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="component-links"><strong>Component Links</strong><a href="#component-links" class="hash-link" aria-label="Direct link to component-links" title="Direct link to component-links">​</a></h4>
+<p>Figma components may contain links to documentation, etc. These links can be exported as comments in the output code.</p>
+<ul>
+<li>
+<p><strong><code>As Comments (default)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="component-set-names"><strong>Component Set Names</strong><a href="#component-set-names" class="hash-link" aria-label="Direct link to component-set-names" title="Direct link to component-set-names">​</a></h4>
+<p>Figma components may be part of a component set. The name of the component set can be exported as a comment with each component variant in the output code.</p>
+<ul>
+<li>
+<p><strong><code>As Comments (default)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="document-properties"><strong>Document Properties</strong><a href="#document-properties" class="hash-link" aria-label="Direct link to document-properties" title="Direct link to document-properties">​</a></h4>
+<p>The entire document&#x27;s properties can be exported as a single line JSON string in the <code>Document Properties</code> panel.</p>
+<blockquote>
+<p><em>Note: This feature is currently in beta. Only the document ID can be exported. lol</em></p>
+</blockquote>
+<ul>
+<li>
+<p><strong><code>Enabled (beta)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled (default)</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="layer-names"><strong>Layer Names</strong><a href="#layer-names" class="hash-link" aria-label="Direct link to layer-names" title="Direct link to layer-names">​</a></h4>
+<p>Figma layers have names. These names can be exported as comments in the output code.</p>
+<ul>
+<li>
+<p><strong><code>As Comments (default)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="layer-properties"><strong>Layer Properties</strong><a href="#layer-properties" class="hash-link" aria-label="Direct link to layer-properties" title="Direct link to layer-properties">​</a></h4>
+<p>All properties of a layer can be exported as a single line JSON string in the output code.</p>
+<ul>
+<li>
+<p><strong><code>As Comments (default)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="local-variables"><strong>Local Variables</strong><a href="#local-variables" class="hash-link" aria-label="Direct link to local-variables" title="Direct link to local-variables">​</a></h4>
+<p>All variables local to the current document can be exported in the <code>Local Variables</code> panel.</p>
+<blockquote>
+<p><em>Note: This feature is currently in beta. Only some variables can be exported.</em></p>
+</blockquote>
+<ul>
+<li>
+<p><strong><code>Enabled (beta)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled (default)</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="team-libraries"><strong>Team Libraries</strong><a href="#team-libraries" class="hash-link" aria-label="Direct link to team-libraries" title="Direct link to team-libraries">​</a></h4>
+<p>Figma teams may have libraries shared across the team. All libraries present in the current document can be exported in the <code>Team Libraries</code> panel.</p>
+<blockquote>
+<p><em>Note: This feature is currently in beta.</em></p>
+</blockquote>
+<ul>
+<li>
+<p><strong><code>Enabled (beta)</code></strong></p>
+</li>
+<li>
+<p><strong><code>Disabled (default)</code></strong></p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="output"><strong>Output</strong><a href="#output" class="hash-link" aria-label="Direct link to output" title="Direct link to output">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dynamic-size"><strong>Dynamic Size</strong><a href="#dynamic-size" class="hash-link" aria-label="Direct link to dynamic-size" title="Direct link to dynamic-size">​</a></h4>
+<p>Figma layers may contain dynamic sizing properties, such as <code>fill</code> width or height. The Figma API does not provide these properties. This setting allows for the dynamic sizing properties to be exported.</p>
+<p>To use this feature, <code>Node Parent</code> must be set to <code>Crawl Document</code>.</p>
+<ul>
+<li>
+<p><strong><code>Always (default)</code></strong> Export dynamic sizing properties for any layer.</p>
+</li>
+<li>
+<p><strong><code>Must Select Parent</code></strong> To export dynamic sizing properties, a parent containing auto layout must be selected.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="image-aspect-ratio"><strong>Image Aspect Ratio</strong><a href="#image-aspect-ratio" class="hash-link" aria-label="Direct link to image-aspect-ratio" title="Direct link to image-aspect-ratio">​</a></h4>
+<p>Images can be exported with their aspect ratio preserved. A <code>resizable</code> modifier is applied to the image view to respect the aspect ratio.</p>
+<ul>
+<li>
+<p><strong><code>Mesh from Frame</code></strong> Use the frame dimensions to create a resizable mesh.</p>
+</li>
+<li>
+<p><strong><code>Preserve (default)</code></strong> Preserve the aspect ratio of the image and apply a resizable modifier.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="layer-mask"><strong>Layer Mask</strong><a href="#layer-mask" class="hash-link" aria-label="Direct link to layer-mask" title="Direct link to layer-mask">​</a></h4>
+<p>Figma layers may contain masks. Masking is not currently supported by the generator. Masks can be disabled from output or rendered as shapes for testing.</p>
+<ul>
+<li>
+<p><strong><code>Disable (default)</code></strong> Do not render masks.</p>
+</li>
+<li>
+<p><strong><code>Render as Shape</code></strong> Render masks as shapes.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="no-layer-name"><strong>No Layer Name</strong><a href="#no-layer-name" class="hash-link" aria-label="Direct link to no-layer-name" title="Direct link to no-layer-name">​</a></h4>
+<p>When a layer contains no name, it must be given a unique name to be exported. This setting chooses the default name to be given to layers without a name.</p>
+<ul>
+<li>
+<p><strong><code>&quot;FigmaLayer&quot; (default)</code></strong></p>
+</li>
+<li>
+<p><strong><code>&quot;Unnamed&quot;</code></strong></p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="transforms"><strong>Transforms</strong><a href="#transforms" class="hash-link" aria-label="Direct link to transforms" title="Direct link to transforms">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="opacity-transforms"><strong>Opacity Transforms</strong><a href="#opacity-transforms" class="hash-link" aria-label="Direct link to opacity-transforms" title="Direct link to opacity-transforms">​</a></h4>
+<p>Figma represents opacity as <code>33%</code> percentages. SwiftUI represents opacity as <code>0.33</code> decimals. This setting allows for the conversion of opacity values.</p>
+<ul>
+<li>
+<p><strong><code>Enabled (default)</code></strong> Convert opacity values to decimals.</p>
+</li>
+<li>
+<p><strong><code>Keep Figma</code></strong> Keep opacity values as integer percentages.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="variable-transforms"><strong>Variable Transforms</strong><a href="#variable-transforms" class="hash-link" aria-label="Direct link to variable-transforms" title="Direct link to variable-transforms">​</a></h4>
+<p>Exact values used in Figma may not translate directly to SwiftUI. This setting enables transformations of variables to better match SwiftUI.</p>
+<p>When a Figma variable is transformed, a <code>_mod</code> suffix is added to the variable name.</p>
+<ul>
+<li>
+<p><strong><code>Enabled (default)</code></strong> Apply transformations to variables.</p>
+</li>
+<li>
+<p><strong><code>Keep Figma</code></strong> Keep variables as they are.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="variables"><strong>Variables</strong><a href="#variables" class="hash-link" aria-label="Direct link to variables" title="Direct link to variables">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="duplicate-variables"><strong>Duplicate Variables</strong><a href="#duplicate-variables" class="hash-link" aria-label="Direct link to duplicate-variables" title="Direct link to duplicate-variables">​</a></h4>
+<p>Figma variables may be used multiple times in a design. This setting allows for the identification of duplicate variables.</p>
+<ul>
+<li>
+<p><strong><code>Index Instances</code></strong></p>
+</li>
+<li>
+<p><strong><code>Merge (default)</code></strong></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="figma-variables"><strong>Figma Variables</strong><a href="#figma-variables" class="hash-link" aria-label="Direct link to figma-variables" title="Direct link to figma-variables">​</a></h4>
+<p>Figma variables used in the design are exported in a separate <code>Variables</code> panel. This setting enables the rendering the value of each variable in place of the variable name in the output code.</p>
+<ul>
+<li>
+<p><strong><code>Link by Name (default)</code></strong> Use the name of the variable in the design as the name of the variable in the code.</p>
+</li>
+<li>
+<p><strong><code>Render in Place</code></strong> Render the value of the variable in place of the variable name in the code.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h2>
+<p>This plugin is supplied with extended support for SwiftUI, as well as many fixes &amp; opinionated changes. Most of the Figma Node parser has been rewritten for Figma Variable support. The SwiftUI renderer has been rewritten to better support the current Swift standard.</p>
+<ul>
+<li>
+<p><strong>Only Supports SwiftUI</strong> All other renderers have been disabled.</p>
+</li>
+<li>
+<p><strong>Strict SwiftUI Compliance</strong> The renderer has been rewritten to translate Figma designs as accurately as possible with code generated to the latest Swift 6.0 standard.</p>
+</li>
+<li>
+<p><strong>Removed Auto Layout Inferral</strong> To simplify renderer impl, the <code>Inferred Auto Layout</code> calculation was removed. You must manually add Auto Layout to a frame to get layout properties. If you are unsure of what this means, you are unaffected.</p>
+</li>
+<li>
+<p><strong>Accurate Layout Properties</strong> Layout properties are now exported accurately. Frames take into account both horizontal &amp; vertical alignment when translating to Swift. Responsive layout properties are now supported. Nested elements are now exported with responsive layout properties.</p>
+</li>
+<li>
+<p><strong>Basic Vector Rendering</strong> Basic vector shapes are now supported. Vectors are exported as <code>Path</code> views. Rendering is expensive and may not be accurate/precise.</p>
+</li>
+<li>
+<p><strong>Correct Border Rendering</strong> Border properties for frames are now exported correctly as <code>.border()</code> modifiers. Previously, they were exported as <code>.overlay()</code> modifiers containing <code>Rectangles</code> with strokes. If a frame has a nonuniform border, only then will the border will be exported as an overlay (as SwiftUI does not support individual border sizes on stacks).</p>
+<blockquote>
+<p><em>Note: To export as <code>.border()</code>, use a single <strong>uniform border</strong> size with <strong>center alignment</strong>.</em></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Individual Border Sizes</strong> Individual border sizes are now supported. SwiftUI does not support individual border sizes on stacks. Different techniques are used based on the border alignment.</p>
+<table><thead><tr><th>Align</th><th>Output</th><th>Accuracy</th></tr></thead><tbody><tr><td>Inside</td><td><code>.overlay()</code></td><td>🔵 Medium</td></tr><tr><td>Center</td><td><code>.overlay()</code></td><td>🟡 Poor</td></tr><tr><td>Outside</td><td><code>.background()</code></td><td>🟢 High</td></tr></tbody></table>
+<p>For outside borders, a special technique using two <code>Rectangles</code> is used to simulate the border. This technique preserves rounded corners. A limitation is that certain uneven border sizes may not be supported, usually nonproportional increases to each side of the top &amp; bottom anchors.</p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">/* Figma      =&gt;    SwiftUI */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><span class="token number" style="color:#36acaa">1</span><span class="token plain">                 </span><span class="token number" style="color:#36acaa">2</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ________          </span><span class="token operator" style="color:#393A34">===</span><span class="token operator" style="color:#393A34">===</span><span class="token operator" style="color:#393A34">==</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">2</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain">    </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token plain">  </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain">  </span><span class="token number" style="color:#36acaa">2</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain">    </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token operator" style="color:#393A34">||</span><span class="token plain">    </span><span class="token operator" style="color:#393A34">||</span><span class="token plain">          </span><span class="token operator" style="color:#393A34">||</span><span class="token plain">    </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><span class="token number" style="color:#36acaa">0</span><span class="token plain">                 </span><span class="token number" style="color:#36acaa">0</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// fig1. Unsupported border ⚠️</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">/* Figma      =&gt;    SwiftUI */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><span class="token number" style="color:#36acaa">2</span><span class="token plain">                 </span><span class="token number" style="color:#36acaa">2</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token operator" style="color:#393A34">===</span><span class="token operator" style="color:#393A34">===</span><span class="token operator" style="color:#393A34">==</span><span class="token plain">          </span><span class="token operator" style="color:#393A34">===</span><span class="token operator" style="color:#393A34">===</span><span class="token operator" style="color:#393A34">==</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">2</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain">       </span><span class="token number" style="color:#36acaa">0</span><span class="token plain">  </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain">  </span><span class="token number" style="color:#36acaa">2</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain">       </span><span class="token number" style="color:#36acaa">0</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token operator" style="color:#393A34">||</span><span class="token plain">                </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><span class="token number" style="color:#36acaa">0</span><span class="token plain">                 </span><span class="token number" style="color:#36acaa">0</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// fig2. Supported border ✅</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p><em>Note: Only <strong>Frame</strong> &amp; <strong>Rectangle</strong> layers currently support individual border output.</em></p>
+</blockquote>
+<blockquote>
+<p><em>Note: Dashed borders are not supported.</em></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Correct Shape Fill Rendering</strong> Shape fills are now exported correctly as <code>.fill()</code> modifiers. Previously, they were exported as <code>.background()</code> modifiers. <code>.fill()</code> fills a shape, while <code>.background()</code> is applied to the entire background boundaries of a view. <code>.background()</code> modifiers are now only used for frames. Shapes without a fill correctly have <code>.fill(Color.clear)</code> applied.</p>
+</li>
+<li>
+<p><strong>Text Style Rendering</strong> Text Styles are now fully exported as Text View modifiers. Previously, only style snippets were provided. Text Views are exported with their associated custom modifier applied. Duplicate text styles are identified and exported as a single custom modifier.</p>
+</li>
+<li>
+<p><strong>Accurate System Fonts</strong> System fonts are now accurately exported. Previously, system fonts were exported as custom fonts. System fonts are now exported as either a system font constant or as <code>.system()</code> modifiers for custom sizes. Custom fonts are still supported.</p>
+</li>
+<li>
+<p><strong>Effect Style Rendering</strong> Effect Styles are now fully exported as View modifiers. Previously, only modifiers were provided. Effects are exported with their associated custom modifier applied. Duplicate effects are identified and exported as a single custom modifier.</p>
+</li>
+<li>
+<p><strong>Figma Component Support</strong> Figma Components &amp; Instances are now recognized and exported correctly. Instances can be deep rendered or exported using the layer name. Varients &amp; Overrides are not yet supported.</p>
+</li>
+<li>
+<p><strong>SwiftUI Image Support</strong> Image fills are now supported. Images are exported as <code>Image</code> views. The image source is set to the name matching the name of the asset available in the <strong>Assets</strong> section at the bottom of the Dev Mode sidebar. All image properties supplied by the Figma API are supported.</p>
+</li>
+<li>
+<p><strong>Figma Variables</strong> Added full support for Figma variables inside generated code.</p>
+<ul>
+<li>color<!-- -->
+<ul>
+<li>✅ solid</li>
+<li>✅ gradient</li>
+<li>✅ image</li>
+<li>⏳ multiple fills</li>
+</ul>
+</li>
+<li>sizing<!-- -->
+<ul>
+<li>✅ width</li>
+<li>✅ minWidth</li>
+<li>✅ maxWidth</li>
+<li>✅ height</li>
+<li>✅ minHeight</li>
+<li>✅ maxHeight</li>
+</ul>
+</li>
+<li>spacing<!-- -->
+<ul>
+<li>✅ gap<!-- -->
+<blockquote>
+<p><em>Note: SwiftUI applies default spacing, so a value will always be exported to maintain the gap present in your designs.</em></p>
+</blockquote>
+</li>
+<li>✅ padding<!-- -->
+<ul>
+<li>✅ left</li>
+<li>✅ right</li>
+<li>✅ top</li>
+<li>✅ bottom</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>border<!-- -->
+<ul>
+<li>✅ color</li>
+<li>✅ width<!-- -->
+<ul>
+<li>✅ all</li>
+<li>✅ left</li>
+<li>✅ right</li>
+<li>✅ top</li>
+<li>✅ bottom</li>
+</ul>
+</li>
+<li>✅ alignment<!-- -->
+<ul>
+<li>✅ center</li>
+<li>✅ inside</li>
+<li>✅ outside</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>✅ corner radius<!-- -->
+<blockquote>
+<p><em>Note: SwiftUI does not support individual corner radii.</em></p>
+</blockquote>
+</li>
+<li>typography<!-- -->
+<ul>
+<li>✅ text styles</li>
+<li>✅ color</li>
+<li>✅ characters (text content)</li>
+<li>✅ font family</li>
+<li>✅ font size</li>
+<li>✅ font weight</li>
+<li>✅ font style</li>
+<li>✅ line height</li>
+<li>✅ letter spacing<!-- -->
+<blockquote>
+<p><em>Note: SwiftUI has poor support for paragraph spacing.</em></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>✅ opacity</li>
+<li>effects<!-- -->
+<ul>
+<li>✅ drop shadow<!-- -->
+<ul>
+<li>✅ color</li>
+<li>✅ x</li>
+<li>✅ y</li>
+<li>✅ blur</li>
+<li>✅ spread<!-- -->
+<blockquote>
+<p><em>Note: SwiftUI does not support drop shadow spread.</em></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>✅ background blur<!-- -->
+<ul>
+<li>✅ radius</li>
+</ul>
+</li>
+<li>✅ layer blur<!-- -->
+<ul>
+<li>✅ radius</li>
+</ul>
+</li>
+<li>✅ effect styles</li>
+<li>⏳ multiple effects<!-- -->
+<blockquote>
+<p><em>Note: Only a single instance of each effect type, per frame, is currently supported.</em></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Figma Variable Output</strong> Figma Variables are now collected and exported in a separate <code>Variables</code> sections, similar to the default Figma code snippet generator. This allows for easy access to variables used in the design.</p>
+</li>
+<li>
+<p><strong>Variable Transformations</strong> Transformations for variables are now supported. For example, a shadow with identical size values will be twice as large on iOS as it is in Figma. Transformations are now applied to the definition of a variable constant (or when rendering variables in place).</p>
+</li>
+<li>
+<p><strong>Better Position Offsets</strong> Absolute positions are now more accurately translated into offsets. Previously, position offsets were not calculated.</p>
+</li>
+<li>
+<p><strong>Background Blur Support</strong> Background blur effects are now supported as 3 separate blur types. Using either Swift Materials, a custom global modifier based on UIKit Materials, or a custom view modifier. Swift &amp; UIKit materials required predefined blur types, while the custom view modifier allows for any radius amount.</p>
+</li>
+<li>
+<p><strong>True Backdrop Blur Support</strong> True backdrop blur effects are now supported thanks to <a href="https://stackoverflow.com/a/73950386" target="_blank" rel="noopener noreferrer">this</a> (<a href="https://gist.github.com/Rukh/0eeedcb99fe057d1dba00d426c3fa105" target="_blank" rel="noopener noreferrer">code</a>). A custom effect view is created and placed behind the rendered view, then the two views are wrapped in a <code>ZStack</code>. A second technique thanks to <a href="https://medium.com/@edwurtle/blur-effect-inside-swiftui-a2e12e61e750" target="_blank" rel="noopener noreferrer">this</a> (<a href="https://gist.github.com/edwurtle/98c33bc783eb4761c114fcdcaac8ac71" target="_blank" rel="noopener noreferrer">code</a>) can also be applied, though essentially mimics SwiftUI materials.</p>
+</li>
+<li>
+<p><strong>Layer METADATA Output</strong> Layer METADATA can now be rendered as comments in the output code. Supports layer names, component descriptions and links. Component Set Names are exported with their Variants. An entire layer&#x27;s METADATA properties can be exported as a single line JSON string.</p>
+</li>
+<li>
+<p><strong>Parser Stack Improvements</strong> The internal parser has been rewritten to support modifier groupings within the modifiers stack. As Swift is declarative, the order of modifiers is important. Modifier groups allow for high accuracy in the ordering of modifiers. Groups also allow for high precision in the placement of new modifiers within the stack.</p>
+</li>
+<li>
+<p><strong>Future Proofing</strong> The plugin has been rewritten to be more modular and extensible. Future updates will be easier to implement.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="things-to-note">Things to Note<a href="#things-to-note" class="hash-link" aria-label="Direct link to Things to Note" title="Direct link to Things to Note">​</a></h3>
+<ul>
+<li>
+<p>A Figma Frame that contains no nested children will be exported as a <code>Rectangle</code> with the frame&#x27;s properties. The Figma API classifies this unique case as a <code>Shape</code> and not a <code>Frame</code>; there is no way to discern between the types. This is a limitation of the Figma API and not the plugin.</p>
+</li>
+<li>
+<p>Figma does not support variables for font weights. The Figma API uses the font style as both the font style and font weight. All font weight are conerted to their system font weight equivalent.</p>
+</li>
+</ul>
+<p>also: in the interest of time lots of <code>any</code>. sorry mom.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-build">How to Build<a href="#how-to-build" class="hash-link" aria-label="Direct link to How to Build" title="Direct link to How to Build">​</a></h2>
+<p><code>pnpm</code> is used as the package manager.</p>
+<p><code>turbo</code> is used as the build/package tool.</p>
+<p>Use <code>pnpm run build:clean</code> to build the plugin.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="distribute">Distribute<a href="#distribute" class="hash-link" aria-label="Direct link to Distribute" title="Direct link to Distribute">​</a></h3>
+<ol>
+<li>Build the plugin.<!-- -->
+<div class="language-sh codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sh codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pnpm run build:clean</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>Grab the plugin from the <code>dist</code> folder.<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">/apps/plugin/dist/</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>Copy the <code>manifest.json</code> into the <code>dist</code> folder.</li>
+<li>Zip the <code>dist</code> folder.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="upcoming-features">Upcoming Features<a href="#upcoming-features" class="hash-link" aria-label="Direct link to Upcoming Features" title="Direct link to Upcoming Features">​</a></h2>
+<ul>
+<li>
+<p>⏳ <em>Figma Component Set Export</em></p>
+</li>
+<li>
+<p>⏳ <em>Figma Component Variants &amp; Overrides</em></p>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/dataingio/aa-system-docs/blob/main/docs/swiftui-generator.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/aa-system-docs/docs/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Introduction</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/aa-system-docs/docs/category/primitives"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Primitives</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#figgen---figma-to-swiftui-generator" class="table-of-contents__link toc-highlight"><code>FigGen</code> - Figma to SwiftUI Generator</a></li><li><a href="#render-as-a-single-file" class="table-of-contents__link toc-highlight">Render as a Single File</a></li><li><a href="#generator-settings" class="table-of-contents__link toc-highlight">Generator Settings</a><ul><li><a href="#effects" class="table-of-contents__link toc-highlight"><strong>Effects</strong></a></li><li><a href="#fonts" class="table-of-contents__link toc-highlight"><strong>Fonts</strong></a></li><li><a href="#generator" class="table-of-contents__link toc-highlight"><strong>Generator</strong></a></li><li><a href="#metadata" class="table-of-contents__link toc-highlight"><strong>METADATA</strong></a></li><li><a href="#output" class="table-of-contents__link toc-highlight"><strong>Output</strong></a></li><li><a href="#transforms" class="table-of-contents__link toc-highlight"><strong>Transforms</strong></a></li><li><a href="#variables" class="table-of-contents__link toc-highlight"><strong>Variables</strong></a></li></ul></li><li><a href="#changes" class="table-of-contents__link toc-highlight">Changes</a><ul><li><a href="#things-to-note" class="table-of-contents__link toc-highlight">Things to Note</a></li></ul></li><li><a href="#how-to-build" class="table-of-contents__link toc-highlight">How to Build</a><ul><li><a href="#distribute" class="table-of-contents__link toc-highlight">Distribute</a></li></ul></li><li><a href="#upcoming-features" class="table-of-contents__link toc-highlight">Upcoming Features</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">🅰️ Aa System</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aa-system-docs/docs">Docs</a></li><li class="footer__item"><a href="https://github.com/dataingio/aa-system-docs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 dataing Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
