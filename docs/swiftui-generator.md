@@ -76,7 +76,7 @@ Technique used to render backdrop blur effects.
 
 How Figma Effect Styles are rendered.
 
-- **`Modifier`** Render as a custom view modifier. The name of the effect style is used as the modifer name. Global style modifiers are generated in the **Effect Styles** panel.
+- **`Modifier`** Render as a custom view modifier. The name of the effect style is used as the modifer name. Global style modifiers are generated in the `Effect Styles` panel.
 
 - **`Render in Place`** Render the effect style in place. No global style modifiers are generated, and the effect style is rendered directly on the view.
 
@@ -136,7 +136,7 @@ When `Custom Fonts` is set to **System**, this setting defines how to translate 
 
 Text styles can be exported as custom view modifiers or rendered in place.
 
-- **`Modifier (default)`** Render text styles as custom view modifiers. The name of the text style is used as the modifier name. Global style modifiers are generated in the **Text Styles** panel.
+- **`Modifier (default)`** Render text styles as custom view modifiers. The name of the text style is used as the modifier name. Global style modifiers are generated in the `Text Styles` panel.
 
 - **`Render in Place`** Render the text style in place. No global style modifiers are generated, and the text style is rendered directly on the view.
 
