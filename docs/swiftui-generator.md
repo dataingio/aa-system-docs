@@ -5,9 +5,15 @@ title: SwiftUI Generator
 
 ## `FigGen` - Figma to SwiftUI Generator
 
-_"This is the best figgen plugin ever!"_ - _Everyone_
+_"Best figgen plugin ever!"_ - _Everyone_
 
-This is an extension of the popular Figma to Code plugin.
+_"FigGen plugin fuggin rules 🤘🏼"_ - _Figma_
+
+_"Fijma."_ - _Apple (creators of shwift)_
+
+---
+
+This is an extension of the Figma to Code plugin.
 
 Adds support for missing features and supplies many fixes needed to export our design system here @dataingio.
 
